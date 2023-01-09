@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
-    height: 30vh;
+    height: 35vh;
     background: url(./images/green.jpg) no-repeat;
-    background-position: center;
+    background-position: 10% 15%;
     background-size: cover;
     border-bottom: 15px solid #007531;
 }
@@ -19,6 +20,7 @@
     height: 80vh;
     border: 1.5px solid #ededed;
     padding: 10px 30px;
+    margin-bottom: 3vh;
 }
 
 .skills {
@@ -26,11 +28,20 @@
     border: 1.5px solid #ededed;
     padding: 20px 30px;
 }
+#me{
+    overflow-y: scroll;
+    height: 80vh;
+}
+#me:hover{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
 
 .projects {
     height: 50vh;
     border: 1.5px solid #ededed;
     padding: 20px 30px;
+    margin-bottom: 3vh;
 }
 
 .contact {
@@ -59,10 +70,16 @@
     border-radius: 10px 40px;
     font-size: 40px;
     font-weight: 600;
+    transition-duration: 0.7s;
+}
+.info button:hover{
+    color: #042913;
+    border-radius: 8px;
+    transition-duration: 0.5s;
 }
 
 .it {
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 .it h4 {
@@ -79,6 +96,9 @@
     text-decoration: none;
     color: #007531;
 }
+.proDetail a:hover{
+    color: #042913;
+}
 
 .proMain {
     margin-top: 20px;
@@ -89,6 +109,11 @@
     height: 8vh;
     margin: 1vh 0;
     border: 1.7px solid #ededed;
+}
+
+.inputs input:hover{
+    border: 1px solid black;
+    transition-duration: 0.7s;
 }
 
 .inputs {
@@ -116,6 +141,18 @@
     color: white;
 }
 
+.footer a:hover{
+    color: #042913;
+}
+
 .hide {
     display: none;
+}
+
+.header input {
+    margin-left: 10px;
+    height: 8vh;
+    border: 1px solid #c4c1c1;
+    background-color: transparent;
+    width: 155px;
 }
