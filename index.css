@@ -147,6 +147,25 @@
 
 .hide {
     display: none;
+  
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
 
 .header input {
@@ -155,4 +174,31 @@
     border: 1px solid #c4c1c1;
     background-color: transparent;
     width: 155px;
+}
+
+.hovers{
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+  
+    filter: blur(.8px);
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.hover1{
+    background: url(./images/hover1.jpg) no-repeat;
+    -webkit-animation: fadein 0.4s;
+    
+}
+
+.hover2{
+    background: url(./images/hover2.jpg) no-repeat;
+    -webkit-animation: fadein 0.4s;
+}
+
+.hover3{
+    background: url(./images/hover3.jpg) no-repeat;
+    -webkit-animation: fadein 0.7s;
 }
