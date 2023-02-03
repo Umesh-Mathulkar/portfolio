@@ -4,6 +4,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.welcome h1{
+    font-size: 10vw;
+    
+}
+.welcome{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    opacity: 80%;
+   -webkit-animation: fadeout 2.6s;
+}
+#mainShow{
+    -webkit-animation: fadein 1s;
+}
+
 .header {
     height: 35vh;
     background: url(./images/green.jpg) no-repeat;
@@ -24,7 +41,7 @@
 }
 
 .skills {
-    height: 70vh;
+    /* height: 70vh; */
     border: 1.5px solid #ededed;
     padding: 20px 30px;
 }
@@ -42,6 +59,7 @@
     border: 1.5px solid #ededed;
     padding: 20px 30px;
     margin-bottom: 3vh;
+    
 }
 
 .contact {
@@ -89,7 +107,7 @@
 
 .proDetail {
     margin-left: 30px;
-    line-height: 2vh;
+    line-height: 3vh;
 }
 
 .proDetail a {
@@ -150,6 +168,24 @@
   
 }
 
+.skillIntro{
+    -webkit-animation: fadeout 2s;
+    animation-delay: 6s;
+}
+.skillImg{
+   text-align: center;
+    border: 1.5px solid #ededed;
+}
+.skillImg img{
+ margin: 10px 5px 0 5px;
+ transition-duration: 400ms;
+   
+}
+.skillImg img:hover{
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+
 @keyframes fadein{
     from{
         opacity: 0;
@@ -176,29 +212,3 @@
     width: 155px;
 }
 
-.hovers{
-    background-position: center;
-    background-size: cover;
-    height: 150px;
-  
-    filter: blur(.8px);
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 300px;
-}
-
-.hover1{
-    background: url(./images/hover1.jpg) no-repeat;
-    -webkit-animation: fadein 0.4s;
-    
-}
-
-.hover2{
-    background: url(./images/hover2.jpg) no-repeat;
-    -webkit-animation: fadein 0.4s;
-}
-
-.hover3{
-    background: url(./images/hover3.jpg) no-repeat;
-    -webkit-animation: fadein 0.7s;
-}

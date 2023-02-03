@@ -16,143 +16,171 @@
 </head>
 
 <body>
-    <div class="header d-flex justify-content-center align-items-center">
-        <div style="margin-left: 170px;">
-            <h2 style="display: inline-block;">Hello!</h2><input id="input" onblur="namess()" type="text"
-                placeholder="please enter name">
-            <div style="display: inline-block; text-transform: capitalize;" id="name"></div>
-            <h1>Welcome to <br> My Portfolio</h1>
-        </div>
+
+    <div class="welcome" id="welcome">
+        <h1>Welcome!</h1>
     </div>
-    <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4" id="me">
-                    <div class="intro">
-                        <div class="d-flex justify-content-center">
-                            <div class="circle ">
-
-                            </div>
-
-                        </div>
-                        <div class="info mt-2" style="text-align: center;">
-                            <h3>Umesh Mathulkar</h3>
-                            <p>A web designer with excellent hands on html, css and JavaScript(basic) also with a
-                                working knowledge of Adobe Illustrator, Adobe Photoshop and Wordpress.
-                            </p>
-                            <a href="https://www.linkedin.com/in/umesh-mathulkar-b29a9122a" target="_blank">
-                                <button>HIRE ME</button></a>
-
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h3>IT SKILLS</h3>
-                        <div class="it">
-
-                            <h4>HTML</h4>
 
 
-                            <h4>CSS</h4>
+    <div class="hide" id="mainShow">
 
+        <div class="header d-flex justify-content-center align-items-center">
 
-                            <h4>BOOTSTRAP</h4>
-
-
-                            <h4>JavaScript</h4>
-                            <h4>ADOBE PHOTOSHOP</h4>
-                            <h4>ADOBE ILLUSTRATOR</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="projects">
-                        <h2>Projects</h2>
-                        <div class="proMain d-flex">
-                            <img id="law1" src="./images/Asset 1.png" alt="" height="40vh">
-                            <div id="law2" class="proDetail">
-                                <a onmouseover="projects('law'), pro('law')" onmouseleave="projectsDel('law'), proDel('law')"
-                                    href="https://umesh-mathulkar.github.io/LawFirmWebsite/" target="_blank">
-                                    <h4 style="display: inline-block;">Website Related to Services</h4>
-                                    <div id="law" class="hover1 hovers hide"></div>
-                                </a>
-                                <p>An Single Page Application developed using Vanilla JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <img id="calculator1" src="./images/Asset 1.png" alt="" height="40vh">
-                            <div  id="calculator2" class="proDetail">
-                                <a onmouseover="projects('calc'), pro('calc')" onmouseleave="projectsDel('calc'), proDel('calc')"
-                                    href="https://umesh-mathulkar.github.io/calculator/" target="_blank">
-                                    <h4>Calculator</h4>
-                                    <div id="calc" class="hover2 hovers hide"></div>
-                                </a>
-                                <p>An Calculator using JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <img id="ecommerce1" src="./images/Asset 1.png" alt="" height="40vh">
-                            <div id="ecommerce2" class="proDetail">
-                                <a onmouseover="projects('commerce'), pro('commerce')" onmouseleave="projectsDel('commerce'), proDel('commerce')"
-                                    href="https://umesh-mathulkar.github.io/WinKart/" target="_blank">
-                                    <h4>E-commerce Front Page</h4>
-                                    <div id="commerce" class="hover3 hovers hide"></div>
-                                </a>
-                                <p>WinKart</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact">
-
-                        <div class="inputs">
-                            <h3>Contact Us</h3>
-                            <input type="text" name="" id="name" placeholder="Name">
-                            <input type="email" name="" id="mail" placeholder="Mail Address">
-                            <input type="text" name="" id="subject" placeholder="Subject">
-                            <input style="height: 15vh;" type="textarea" name="" id="message" placeholder="Message">
-                            <button>Send Message</button>
-                        </div>
-
-                    </div>
-                </div>
+            <div style="margin-left: 170px;">
+                <h2 style="display: inline-block;">Hello!</h2><input id="input" onblur="namess()" type="text"
+                    placeholder="please enter name">
+                <div style="display: inline-block; text-transform: capitalize;" id="name"></div>
+                <h1 class="entrance">Welcome to <br> My Portfolio</h1>
             </div>
         </div>
-    </div>
-
-    <footer>
-        <div class="footer">
+        <div class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mt-4">
-                        <h3>UMESH MATHULKAR</h3>
-                        <P>A web designer with excellent hands on html, css and JavaScript(basic) also with a
-                            working knowledge of Adobe Illustrator, Adobe Photoshop and Wordpress.</P>
-                    </div>
-                    <div class="col-lg-4 mt-4 d-flex justify-content-center">
-                        <div>
-                            <h4>SOCIAL MEDIA</h4>
-                            <a href="https://www.instagram.com/umesh.mathulkar/" target="_blank">
-                                <h6>INSTAGRAM</h6>
-                            </a>
-                            <a href="https://github.com/Umesh-Mathulkar" target="_blank">
-                                <h6>GITHUB</h6>
-                            </a>
-                            <a href="https://www.linkedin.com/in/umesh-mathulkar-b29a9122a" target="_blank">
-                                <h6>LINKEDIN</h6>
-                            </a>
+                    <div class="col-lg-4">
+                        <div class="scrollable" id="me">
+                            <div class="intro">
+                                <div class="d-flex justify-content-center">
+                                    <div class="circle ">
+
+                                    </div>
+
+                                </div>
+                                <div class="info mt-2" style="text-align: center;">
+                                    <h3>Umesh Mathulkar</h3>
+                                    <p>A web designer with excellent hands on html, css and JavaScript(basic) also with
+                                        a
+                                        working knowledge of Adobe Illustrator, Adobe Photoshop and Wordpress.
+                                    </p>
+                                    <a href="https://www.linkedin.com/in/umesh-mathulkar-b29a9122a" target="_blank">
+                                        <button>HIRE ME</button></a>
+
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <h3>IT SKILLS</h3>
+                                <div class="it">
+
+                                    <h4>HTML</h4>
+
+
+                                    <h4>CSS</h4>
+
+
+                                    <h4>Bootstrap</h4>
+
+
+                                    <h4>JavaScript</h4>
+                                    <h4>React.js</h4>
+                                    <h4>Node.js</h4>
+                                    <h4>Express.js</h4>
+                                    <h4>MongoDB</h4>
+                                    <h4>Adobe Photoshop</h4>
+                                    <h4>Adobe Illustrator</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillImg container mt-2">
+                            <div class="skillIntro" id="skillIntro">
+                                <h1>Skills</h1>
+                            </div>
+                            <div id="skiImg" class="hide">
+                                <img src="./images/htmlImg.png" alt="html" width="70px">
+                                <img src="./images/cssImg.png" alt="" width="70px"><br>
+                                <img src="./images/Bootst.svg" alt="" width="70px">
+                                <img src="./images/jsimg.png" alt="" width="70px">
+                                <img src="./images/react.png" alt="" width="200px">
+                                <img src="./images/mongo.png" alt="" width="160px">
+                                <img src="./images/node.png" alt="" width="160px">
+                                <img src="./images/express.png" alt="" width="140px">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-4">
-                        <h4>ADDRESS</h4>
-                        <h5>NAGPUR, MAHARASHTRA</h5>
+                    <div class="col-lg-8">
+                        <div class="projects">
+                            <h2>Projects</h2>
+                            <div class="proMain d-flex">
+                                <img src="./images/Asset 1.png" alt="" height="40vh">
+                                <div class="proDetail">
+                                    <a href="https://umesh-mathulkar.github.io/LawFirmWebsite/" target="_blank">
+                                        <h4 style="display: inline-block;">Website Related to Services</h4>
+
+                                    </a>
+                                    <p>An Single Page Application developed using Vanilla JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img src="./images/Asset 1.png" alt="" height="40vh">
+                                <div class="proDetail">
+                                    <a href="https://umesh-mathulkar.github.io/calculator/" target="_blank">
+                                        <h4>Calculator</h4>
+
+                                    </a>
+                                    <p>An Calculator using JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img src="./images/Asset 1.png" alt="" height="40vh">
+                                <div class="proDetail">
+                                    <a href="https://umesh-mathulkar.github.io/WinKart/" target="_blank">
+                                        <h4>E-commerce Front Page</h4>
+
+                                    </a>
+                                    <p>WinKart</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+
+                            <div class="inputs">
+                                <h3>Contact Us</h3>
+                                <input type="text" name="" id="name" placeholder="Name">
+                                <input type="email" name="" id="mail" placeholder="Mail Address">
+                                <input type="text" name="" id="subject" placeholder="Subject">
+                                <input style="height: 15vh;" type="textarea" name="" id="message" placeholder="Message">
+                                <button>Send Message</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <div style="height: 1vh;" class="copyright d-flex justify-content-center">
-        <h6>Powered By UMESH MATHULKAR | 2023</h6>
-    </div>
 
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <h3>UMESH MATHULKAR</h3>
+                            <P>A web designer with excellent hands on html, css and JavaScript(basic) also with a
+                                working knowledge of Adobe Illustrator, Adobe Photoshop and Wordpress.</P>
+                        </div>
+                        <div class="col-lg-4 mt-4 d-flex justify-content-center">
+                            <div>
+                                <h4>SOCIAL MEDIA</h4>
+                                <a href="https://www.instagram.com/umesh.mathulkar/" target="_blank">
+                                    <h6>INSTAGRAM</h6>
+                                </a>
+                                <a href="https://github.com/Umesh-Mathulkar" target="_blank">
+                                    <h6>GITHUB</h6>
+                                </a>
+                                <a href="https://www.linkedin.com/in/umesh-mathulkar-b29a9122a" target="_blank">
+                                    <h6>LINKEDIN</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <h4>ADDRESS</h4>
+                            <h5>NAGPUR, MAHARASHTRA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div style="height: 1vh;" class="copyright d-flex justify-content-center">
+            <h6>Powered By UMESH MATHULKAR | 2023</h6>
+        </div>
+    </div>
 </body>
 <script src="port.js"></script>
 
