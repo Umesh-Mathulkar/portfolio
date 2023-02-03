@@ -5,6 +5,7 @@
 }
 .darkMode{
     background-color: rgb(31, 31, 31)!important;
+    transition-duration: 0.4s;
 }
 .darkModeFont{
     color: white;
@@ -21,12 +22,26 @@
     box-shadow: 1px 1px 10px gray;
     background-color: rgb(255, 255, 255);
     transition-duration: 1s;
+    -webkit-animation: expand 0.4s;
+    transform: scale(1.1);
+}
+@keyframes expand {
+    from {
+        transform: scale(1);
+        width: 40px;
+    }
+    to{
+        transform: scale(1.1);
+        width: 70px;
+    }
 }
 .sun{
     width: 70px;
     color: gold;
     background-color: black;
     transition-duration: 0.6s;
+    -webkit-animation: expand 0.4s;
+    transform: scale(1.1);
 }
 
 .welcome h1{
@@ -206,6 +221,21 @@
     transform: scale(1.1);
     transition-duration: 400ms;
 }
+.map{
+    display: none;
+    /* position: absolute; */
+    -webkit-animation: fadein 1s;
+}
+iframe{
+    /* display: none; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(100, 131, 100);
+    transition-duration: 1s;
+}
+.mapShow:hover .map{
+    display: block;
+   -webkit-animation: fadein 1s;
+}
 
 @keyframes fadein{
     from{
@@ -232,4 +262,30 @@
     background-color: transparent;
     width: 155px;
 }
+.hobby{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobby span{
+    margin: 10px;
+    display: none;
+}
+.hobby h1{
+    display: inline-block;
+}
+.hobby:hover span{
+    display: inline-block;
+    -webkit-animation: fadein 1s;
+}
 
+
+
+
+
+@media only screen and (max-width:992px){
+    .hobby span{
+        display: block;
+    }
+}

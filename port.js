@@ -23,7 +23,7 @@ const timeout2 = setTimeout(display2, 10000)
 function darkMode(element) {
     let sun = document.getElementById("sun");
     let moon = document.getElementById("moon");
-    let text = [document.getElementById("info"), document.getElementById("skills"), document.getElementById("projects"), document.getElementById("contact"),document.getElementById("footer")]
+    let text = [document.getElementById("info"), document.getElementById("skills"), document.getElementById("projects"), document.getElementById("contact"),document.getElementById("footer"),document.getElementById("hobby")]
     if (element == "moon") {
         moon.classList.add("moon");
         sun.classList.remove("sun");
