@@ -3,46 +3,54 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.darkMode{
-    background-color: rgb(31, 31, 31)!important;
-    transition-duration: 0.4s;
-}
+
 .darkModeFont{
     color: white;
 }
-.fa{
-    font-size: 40px;
-    background-color: #c4c1c1;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 1px 1px 10px gray;
-}
-.moon{
+.toggleMode{
+    height: 40px;
+   
     width: 70px;
-    box-shadow: 1px 1px 10px gray;
-    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    border-radius: 100px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px 1px 10px grey;
+}
+.circle2{
+    height: 30px;
+    width: 30px;
+    
+    border-radius: 50%;
+    margin-left: 5px;
+    transition-duration: 600ms;
+    background-color: white;
+    box-shadow: 1px 1px 10px green;
+}
+
+.dark{
+    background-color: rgb(31, 31, 31);
     transition-duration: 1s;
-    -webkit-animation: expand 0.4s;
-    transform: scale(1.1);
 }
-@keyframes expand {
-    from {
-        transform: scale(1);
-        width: 40px;
-    }
-    to{
-        transform: scale(1.1);
-        width: 70px;
-    }
+.circleAnim{
+    transform: translate(100%);
+    transition-duration: 600ms;
 }
-.sun{
-    width: 70px;
-    color: gold;
-    background-color: black;
-    transition-duration: 0.6s;
-    -webkit-animation: expand 0.4s;
-    transform: scale(1.1);
+
+
+#off{
+ margin-left: 18%;
+ transition-duration: 500ms;
+ color: grey;
+ font-size: 20px;
 }
+#on{
+    margin-left: -40%;
+    transition-duration: 500ms;
+    font-size: 20px;
+    color: black
+}
+
 
 .welcome h1{
     font-size: 10vw;
@@ -53,7 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f1f1f1;
+
     opacity: 80%;
    -webkit-animation: fadeout 2.6s;
 }
@@ -131,6 +139,7 @@
     border-radius: 8px;
     transition-duration: 0.5s;
 }
+
 
 .it {
     margin-top: 7vh;
@@ -287,5 +296,9 @@ iframe{
 @media only screen and (max-width:992px){
     .hobby span{
         display: block;
+    }
+    .hobby{
+        display: block;
+        text-align: center;
     }
 }

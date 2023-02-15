@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,8 +39,12 @@
         </div>
         <div class="main">
             <div class="container d-flex justify-content-center mb-4">
-                <i onclick="darkMode('moon')" id="moon" class="fa fa-moon d-flex justify-content-center"></i>
-                <i onclick="darkMode('sun')" id="sun" class="fa fa-sun d-flex justify-content-center sun"></i>
+                <div type="button" onclick="toggle()" class="toggleMode">
+                    <div id="circle" class="circle2"></div>
+                    <span id="on"  class="hide">  <i class="fa fa-sun d-flex justify-content-center sun"></i></span>
+                    <span id="off"> <i class="fa fa-moon d-flex justify-content-center"></i></span>
+                    
+                </div>
             </div>
             <div class="container">
                 <div class="row">
